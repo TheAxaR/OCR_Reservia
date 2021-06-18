@@ -1,6 +1,9 @@
 *
 {
     font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -8,8 +11,7 @@
 {
     width: 100%;
     margin: auto;
-    
-    
+        
 }
 
 
@@ -17,36 +19,39 @@ header
 {
     display: flex;
     align-items: center;  
+    /* margin: 150px 10px 25px 50px; */
 
 }
 header #logo_container
 {
     flex-grow: 7;
-    margin-left: 15px;
+    margin-left: 50px;
+    margin-top: 25px;
     
 }
 
 header #logo_container img
 {
-    max-width: 10%;
+    max-width: 150px;
 }
 
 header nav ul
 
 {
-    flex-grow:2;
+    flex-grow:3;
+    margin-top: 25px;
     display: flex;
-    /* padding: 10px; */
     list-style: none;
     /* justify-content: space-between; */
-    /* width: 20%; */
+    width: 320px;
 
 
 }
 
 header nav li
 {
-   margin-right: 15px; 
+   margin-right: 15px;
+   
 }
 
 header nav a
@@ -55,7 +60,9 @@ header nav a
     color: black;
     padding-bottom:15px ;
     text-decoration: none ;
+    
 }
+
 header nav a:hover
 {
     color: #0065FC;
@@ -66,6 +73,7 @@ header nav a:hover
 header .inscription
 
 {
+    margin-top: 25px;
     flex-grow: 1;
     color: #0065FC;
     background: none;
