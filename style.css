@@ -1,0 +1,74 @@
+*
+{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#page_block
+{
+    width: 100%;
+    margin: auto;
+    
+    
+}
+
+
+header
+{
+    display: flex;
+    align-items: center;  
+
+}
+header #logo_container
+{
+    flex-grow: 7;
+    margin-left: 15px;
+    
+}
+
+header #logo_container img
+{
+    max-width: 10%;
+}
+
+header nav ul
+
+{
+    flex-grow:2;
+    display: flex;
+    /* padding: 10px; */
+    list-style: none;
+    /* justify-content: space-between; */
+    /* width: 20%; */
+
+
+}
+
+header nav li
+{
+   margin-right: 15px; 
+}
+
+header nav a
+{
+    font-size: ;
+    color: black;
+    padding-bottom:15px ;
+    text-decoration: none ;
+}
+header nav a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    font-weight: bold;
+}
+
+header .inscription
+
+{
+    flex-grow: 1;
+    color: #0065FC;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
