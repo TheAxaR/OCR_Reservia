@@ -2,10 +2,7 @@
 {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    margin: 0;
-    padding: 0;
-
-}
+ }
 
 #page_block
 {
@@ -19,39 +16,41 @@ header
 {
     display: flex;
     align-items: center;  
-    /* margin: 150px 10px 25px 50px; */
-
+    justify-content: space-between;
 }
-header #logo_container
+
+#logo_container
 {
-    flex-grow: 7;
-    margin-left: 50px;
-    margin-top: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
     
 }
 
-header #logo_container img
+#logo_container img
 {
-    max-width: 150px;
+    max-width: 125px;
+}
+
+.header_right
+{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 header nav ul
 
 {
-    flex-grow:3;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     display: flex;
-    list-style: none;
-    /* justify-content: space-between; */
-    width: 320px;
-
-
+    list-style-type: none;
+    /* justify-content: ; */
+    /* width: 320px;  */
 }
 
 header nav li
 {
-   margin-right: 15px;
-   
+   margin-right: 55px;
 }
 
 header nav a
@@ -60,7 +59,6 @@ header nav a
     color: black;
     padding-bottom:15px ;
     text-decoration: none ;
-    
 }
 
 header nav a:hover
@@ -71,12 +69,73 @@ header nav a:hover
 }
 
 header .inscription
-
 {
-    margin-top: 25px;
-    flex-grow: 1;
+    /* margin-top: 25px; */
+    /* margin-right: 50px; */
     color: #0065FC;
     background: none;
     border: none;
     font-weight: bold;
+    /* justify-content: flex-end; */
+}
+
+h1
+{
+font-weight: bold;
+font-size: 1.2em;
+}
+
+#search_area
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#search_area form
+{
+    display: flex;
+}
+
+#search_area i
+
+{
+    background-color: #F2F2F2;
+    padding: 12px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+#search_area input
+{
+    width: 175px;
+    height: 36px;
+    border-color: #F2F2F2;
+    border-style: solid;
+}
+
+#search_area button
+{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    height: 42px;
+    color: white;
+    border-style: solid;
+    border: none;
+
+}
+
+#filters
+{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+#filters .option
+
+{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    
 }
