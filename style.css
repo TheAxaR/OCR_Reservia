@@ -16,13 +16,13 @@ header
 {
     display: flex;
     align-items: center;  
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    padding-top: 50px;
 }
 
 #logo_container
 {
-    margin-left: 15px;
-    margin-top: 5px;
+    margin-right: auto;
     
 }
 
@@ -31,12 +31,6 @@ header
     max-width: 125px;
 }
 
-.header_right
-{
-    margin-top: 5px;
-    display: flex;
-    flex-wrap: nowrap;
-}
 
 header nav ul
 
@@ -66,6 +60,7 @@ header nav a:hover
     color: #0065FC;
     border-top: 3px solid #0065FC;
     font-weight: bold;
+    padding-top: 50px;
 }
 
 header .inscription
@@ -137,29 +132,36 @@ font-size: 1.2em;
 #filters .option
 
 {
+   
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    cursor: pointer;
+    border: 2px solid #e6e5e5;
     border-radius: 35px;
-    /* border-radius: 50%; */
-    flex-wrap: nowrap;
-    border-color: #F2F2F2;
-    border-style: solid;
-    padding-right: 25px;
-    white-space: nowrap;
+    margin-left: 32px;
+    padding-right: 22px;
+    font-weight: bold;
+    height: 45px;
     
 }
 
 .option i
 
 {
-    color:#0065FC ;
-    border-radius: 35px;
-    /* border-style: solid; */
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     background-color: #DEEBFF;
-    padding: 20px;
-    margin-right: 15px;
-    width: 17px; 
+    margin-right: 10px;
+    border: 2px solid #DEEBFF;
+    left: -1px;
+    color: #0065FC;
+ 
+      
+   
 }
 
 #rentals_number
@@ -173,11 +175,21 @@ font-size: 1.2em;
 #rentals_number i
 
 {
+    display: flex;
+    justify-content: center;
     color:#0065FC ;
-    border-radius: 35px 35px 35px 35px;
-    /* border-style: solid; */
-    background-color: #DEEBFF;
-    padding: 20px;
+    border-radius: 35px;
+    border: 2px solid #DEEBFF;
+    background-color: white;
+    padding: 3px;
     margin-right: 15px;
-    width: 17px;
+    width: 15px;
+}
+
+#rentals_found
+{
+    display: flex;
+    background-color:#DEEBFF;
+    
+
 }
