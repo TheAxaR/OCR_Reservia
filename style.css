@@ -265,6 +265,7 @@ h2
     border-style: none;
     font-weight: bold;
     background-color: #F2F2F2;
+    width: 50%;
 }
 
 .show_more :hover
@@ -288,6 +289,7 @@ h2
 #rentals_found h1 
 {
     grid-area: title;
+    margin-left: 10px;
 }
 
 .notation
@@ -569,11 +571,17 @@ footer li
 }
 footer div
 {
-    margin-right: 15%;
+    width: 33%;
+    padding-left: 25px;
 }
 
 footer h2
 {
-    padding-left: 40px;
+    /* padding-left: 40px; */
     font-size: 1em;
+}
+
+footer ul
+{
+    padding-left: 0px;
 }
