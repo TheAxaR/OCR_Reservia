@@ -52,7 +52,6 @@ header nav li
 
 header nav a
 {
-    font-size: ;
     color: black;
     padding-bottom:15px ;
     text-decoration: none ;
@@ -183,7 +182,7 @@ h2
 {
     display: flex;
     align-items: center;
-    white-space: nowrap;
+    white-space: wrap;
     margin-left: 25px;
 
 }
@@ -222,8 +221,8 @@ h2
     "la_cannebiere hotel_du_port hotel_mouettes"
     "hotel_mer auberge_panier hotel_amina"
     "show_more show_more show_more";
-    padding-left: 25px;
-    padding-right: 25px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
     border-radius: 25px;
     margin: 25px;
     padding: 25px;
@@ -389,6 +388,7 @@ h2
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    width: 46%;
 }
 
 #rentals_popular p
@@ -455,11 +455,7 @@ h2
     justify-content: space-between;
     
 }
-/* #activities .photo_container */
-{
-    /* width: 100%; */
-    /* height: 90%; */
-}
+
 
 #vieux_port .photo_container
 {
@@ -597,6 +593,7 @@ footer ul
 {
     /* margin: 0 auto; */
     padding: 0 auto;
+    /* width: 100%; */
 }
 
 header 
@@ -605,21 +602,27 @@ header
     width: 100%;
     border-bottom: solid 2px grey;
     /* justify-content: space-evenly; */
-    padding: 20px 0px 15px 25px;
+    /* padding: 15px 0px 0px 25px; */
     margin: 0px;
+}
+
+#logo_container
+{
+    margin-bottom: 25px;
+    padding-left: 25px;
 }
 
 header .inscription
 {
-    position: absolute;
-    right: 0px;
-    top: 45px;
+    position: relative;
+    left: 300px;
+    top: -85px;
 }
 
 
 header li 
 {
-    margin-left: 50px;
+    margin-left: 40px;
     margin-right: auto !important;
     padding: 0px;
     font-weight: bold;
@@ -638,6 +641,7 @@ header nav a:hover
 header ul 
 {
     padding: 0px;
+    margin: 0px;
 }
 
 #option_field
@@ -662,11 +666,18 @@ header ul
 #search_area 
 {
     margin: 30px 0px 0px 10px;
+    max-width: 90%;
 }
 
+#search_area i
+{
+    width: 4%;
+}
 #search_area button 
 {
     border-radius: 10px;
+    width: 12%;
+    padding-right: 23px;
     
 }
 .recherche
@@ -714,6 +725,13 @@ header ul
     position: relative;
 }
 
+.option i
+{
+    width: 45px;
+    position: relative;
+    left: -3px;
+}
+
 #filters h2 
 {
     font-size: 22px;
@@ -730,19 +748,170 @@ header ul
 
 #family_option
 {
-    left: -80px;
+    left: -100px;
     top: -50px;
 }
 #romantic_option
 {
     bottom: -15px;
-    left: -470px;
+    left: -469px;
 }
 
 #pet_option
 {
     bottom: -80px;
-    left: -677px;
+    left: -675px;
+    white-space: nowrap;
 
 }
+#rentals_number
+{
+    margin-bottom: 25px;
+}
+
+#rentals_number p 
+{
+    width: 85%;
+}
+#search_results
+{
+    flex-direction: column-reverse;
+}
+
+#rentals_popular
+{
+    
+    /* flex-grow: 1; */
+    gap: 10px;
+    border-radius: 0px;
+    margin: 0px;  
+    padding: 20px;
+}
+
+#rentals_popular .text_container 
+{
+    padding-left: 15px;
+    justify-content: none;
+  
+}
+
+#rentals_popular h2
+{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+#rentals_popular .card
+{
+    max-width: 100%;
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+
+.title_popular i 
+{
+    margin-right: 0px;
+}
+
+#rentals_found
+{
+    /* flex-grow: 2; */
+    background-color:#F2F2F2;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+    gap: 20px;
+    grid-template-areas: 
+    "title"
+    "la_cannebiere"
+    "hotel_du_port"
+    "hotel_mouettes"
+    "hotel_mer"
+    "auberge_panier"
+    "hotel_amina"
+    "show_more";
+    border-radius: 0px;
+    margin: 0px;
+    padding: 25px;
+}
+
+
+#town_activities
+{
+    flex-direction: column;
+
+}
+
+#town_activities
+{
+    /* justify-content: space-between; */
+    height: 100%
+   
+}
+#activity_1
+{
+    width: 100%;
+    /* height: 50%; */
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#pomegues
+{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#frioul
+{
+    height: 200px;
+}
+
+#calanques
+{
+    height: 200px; 
+    margin-bottom: 20px;
+       
+}
+
+#notre_dame 
+{
+    height: 200px ;
+    margin-bottom: 20px;
+       
+}
+
+#longchamp
+{
+    
+    height: 200px ;
+}
+
+#activity_2
+{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+#activity_3
+{
+    width: 100%;
+    height: 50%;
+}
+#activity_4
+{
+    width: 100%;
+    height: 100%;
+}
+#activities .photo_container
+{
+    /* width: 100%; */
+    height: 75%;
+}
+#activities .text_container
+{
+    height: 25%;
+    font-size: 19xp;
+}
+
 }
