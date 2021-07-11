@@ -1,0 +1,53 @@
+footer
+{
+    background-color: #F2F2F2 ;
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+
+footer li
+{
+    list-style: none;
+    font-size: .8em;
+    margin-bottom: .7em;
+
+}
+footer div
+{
+    width: 33%;
+    padding-left: 25px;
+}
+
+footer h2
+{
+    /* padding-left: 40px; */
+    font-size: 1em;
+}
+
+footer ul
+{
+    padding-left: 0px;
+}
+
+/* @MEDIA footer */
+@media all and (max-width: 1024px)
+{
+    footer
+    {
+        flex-direction: column;
+        padding-left: 20px;
+        /* width: 100%; */
+    }
+    
+    footer h2 
+    {
+        width: 104%;
+    }
+    footer li 
+    {
+        width: 131%;
+    }  
+}

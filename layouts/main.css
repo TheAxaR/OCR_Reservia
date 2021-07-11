@@ -1,0 +1,765 @@
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+span{white-space:pre;}
+h2{font-size:1.3em;}
+.blue{color:#0065FC;}
+.greyLight{color:#F2F2F2;}
+
+/* filtres */
+
+#option_field 
+{
+    margin: 0 auto;
+    max-width: 1340px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#search_area
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#search_area form
+{
+    display: flex;
+}
+
+#town_location
+{
+    margin-left: 25px;
+}
+
+#town_location h1
+{
+    font-size: 1.3em;
+    margin-bottom: 15px;    
+}
+
+#town_location p
+{
+    margin-bottom: 15px;
+}
+#search_area i
+
+{
+    background-color: #F2F2F2;
+    padding: 12px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+#search_area input
+{
+    width: 175px;
+    height: 36px;
+    border-color: #F2F2F2;
+    border-style: solid;
+
+}
+
+#search_area button
+{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    height: 42px;
+    color: white;
+    border-style: solid;
+    border: none;
+    padding: 0px 10px 0px;
+
+}
+
+.alternate_recherche
+{
+    display:none;
+}
+
+#filters
+{
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 60px;
+    align-items: center;
+      
+}
+
+#filters .option
+
+{
+   
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #e6e5e5;
+    border-radius: 35px;
+    margin-left: 32px;
+    padding-right: 22px;
+    font-weight: bold;
+    height: 45px;
+    
+}
+
+.option i
+
+{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    margin-right: 10px;
+    border: 2px solid #DEEBFF;
+    left: -1px;
+    color: #0065FC;  
+}
+
+#rentals_number
+{
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+    margin-left: 25px;
+
+}
+
+#rentals_number i
+
+{
+    display: flex;
+    justify-content: center;
+    color:#0065FC ;
+    border-radius: 35px;
+    border: 2px solid #DEEBFF;
+    background-color: white;
+    padding: 3px;
+    margin-right: 15px;
+    width: 15px;
+}
+#search_results
+{
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+
+/* GRID-Main-Hébergements*/
+#search_results.grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap:45px;
+    grid-template-areas:
+      "rentals_found popular";
+}
+#rentals_found{grid-area: rentals_found;}
+#popular{grid-area: popular;}
+
+/* GRID-Hébergements*/
+#rentals_found.grid {
+    display: grid;
+    grid-gap:28px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+      "title title title"
+      "la_cannebiere hotel_du_port hotel_mouettes"
+      "hotel_mer auberge_panier hotel_amina"
+      "displayMore displayMore displayMore";
+    background-color: #F2F2F2;
+}
+#rentals_found h2 {grid-area: title;}
+
+/* GRID-Populaire*/
+#popular.grid{
+    display: grid;
+    grid-gap:28px;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-areas:
+      "title"
+      "cardP1"
+      "cardP2"
+      "cardP3";
+    background-color: #F2F2F2;
+}
+#popular h2 {grid-area: title;}
+
+
+/*-- Hébergements */
+#search_results{
+    margin-top:50px;
+}
+#search_results h2{
+    font-weight:bold;
+    color: black;
+}
+#search_results h3{
+    font-weight:bold;
+    color: black;
+    font-size: 1em;
+}
+#search_results span{
+    font-size: small;
+    font-weight:bold;
+    color: black;
+}
+#search_results a{
+    font-size:1.2em;
+    font-weight:bold;
+}
+#rentals_found{
+    padding:40px 40px 40px 40px;
+    border-radius: 20px 20px 20px 20px;
+}
+#rentals_found a{
+    padding-top:5px;
+}
+#rentals_found .cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 33%;
+    margin-top:8px;
+    margin-left:8px;
+}
+.rentals_found-card{
+    width: 100%;
+    max-height: 200px;
+    min-width:190px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px #c2c2c2;
+    background-color: white;
+    padding: 5px 5px 0px 5px;
+}
+.rentals_found-card .imgContainer{
+    border-radius: 15px 15px 0 0;
+    width:100%;
+    height: 60%;
+}
+.rentals_found-card img{
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+}
+.rentals_found-card p{
+    font-size: 14px;
+}
+.rentals_found-card p b{
+    font-size: 13px;
+}
+.rentals_found-card i{
+    font-size: 12px;
+    letter-spacing: -3px;
+}
+
+/*Populaire*/
+#popular{
+    padding: 40px 40px 40px 40px;
+    border-radius: 20px 20px 20px 20px;
+}
+#popular #flexContainer-title{
+    display: flex;
+}
+#popular #flexContainer-title h2{
+    margin-right: auto;
+}
+#popular #flexContainer-title i{
+    font-size: 23px;
+}
+#popular .flexContainerCard{
+    display: flex;
+}
+#popular .cardContent{
+    margin-top:8px;
+    margin-left:13px;
+}
+main .cardPopular{
+    width:100%;
+    height:10%;
+    max-width: 343px;
+    min-width:290px;
+    min-height: 143px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px #c2c2c2;
+    background-color: white;
+    padding: 5px 5px 0px 5px;
+}
+main .cardPopular .imgContainer{
+    border-radius: 15px 15px 0 0;
+    width:42%;
+    height: 143px;
+}
+main .cardPopular img{
+    border-radius: 15px 0px 0 15px;
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+    min-width: 125px;
+    max-height: 138px;
+}
+#popular .cardContent{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-right: 25px;
+    justify-content: space-between;
+}
+#popular p{
+    padding-top: 8px;
+    font-size: 14px;
+}
+#popular .starContainer{
+    padding-bottom: 10px;
+}
+#popular .starContainer i{
+    font-size: 12px;
+}
+/* activities */
+#activities
+{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;    
+}
+
+#town_activities
+
+{
+    display:flex;
+    flex-direction: row;
+    height: 25rem;
+    min-height: 20em;
+}
+
+#activity_1
+{
+    width: 25%;
+    /* height: 100%; */
+    /* min-height: 390px; */
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#activity_2
+{
+    width: 25%;
+    margin-right: 25px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#activity_3
+{
+    width: 25%;
+    /* height: 100%; */
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+#activity_4                     
+{
+    width: 25%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+#vieux_port .photo_container
+{
+    height: 90%;
+}
+
+#pomegues .photo_container
+{
+    height: 80%
+}
+
+#frioul .photo_container
+{
+    height: 75%;
+}
+
+#calanques .photo_container
+{
+    height: 90%;
+}
+
+#notre_dame .photo_container
+{
+    height:77% ;
+}
+
+#longchamp .photo_container
+{
+    height: 80%;
+}
+
+
+#activities .text_container
+{
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    /* background-color: white; */
+}
+
+#activities img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+#vieux_port
+{
+   height: 100% ;
+   border-radius: 25px;
+    box-shadow: .3em .3em .3em #F2F2F2;
+}
+#pomegues
+{
+    height: 50% ;
+    border-radius: 25px;
+    box-shadow: .3em .3em .3em #F2F2F2;
+    
+}
+
+#frioul
+{
+    height: 40%;
+    border-radius: 25px ;
+    box-shadow: .3em .3em .3em #F2F2F2;
+    /* margin-top: 3em; */
+}
+
+#calanques
+{
+    height: 100%; 
+    border-radius: 25px;
+    box-shadow: .3em .3em .3em #F2F2F2;;
+   
+}
+
+#notre_dame 
+{
+    height: 40% ;
+    border-radius: 25px ;
+    box-shadow: .3em .3em .3em #F2F2F2;
+    
+}
+
+#longchamp
+{
+    
+    height: 50% ;
+    /* margin-top: 3em; */
+    border-radius: 25px ;
+    box-shadow: .3em .3em .3em #F2F2F2;
+}
+/* @MEDIA option_field */
+@media all and (max-width: 1024px){
+    #option_field
+{
+    margin-top: 30px;
+    padding: 0px 10px 0px;
+}
+
+#option_field h1 
+{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#option_field p 
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#search_area 
+{
+    margin: 30px 0px 0px 10px;
+    max-width: 90%;
+}
+
+#search_area i
+{
+    width: 4%;
+}
+#search_area button 
+{
+    border-radius: 10px;
+    width: 12%;
+    padding-right: 23px;
+    
+}
+.recherche
+{
+    display:none;
+}
+
+.alternate_recherche
+{
+    display: inline;
+    border-radius: 12px;
+    padding: 0px 10px 0px;
+    position: relative;
+    left: -5px;
+
+}
+.alternate_recherche i
+{
+    background-color: #0065FC !important;
+    padding: 0px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+  
+   
+}
+
+#search_area input
+{
+    width: 250px;
+    height: 36px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-right: none;
+}
+#filters
+{
+   width: 50%;
+    height: 290px;
+}
+
+#filters .option
+{
+    display: flex;
+    position: relative;
+}
+
+.option i
+{
+    width: 45px;
+    position: relative;
+    left: -3px;
+}
+
+#filters h2 
+{
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    top: -110px;
+}
+
+#economic_option
+{
+    left: -85px;
+    top: -50px;
+}
+
+#family_option
+{
+    left: -100px;
+    top: -50px;
+}
+#romantic_option
+{
+    bottom: -15px;
+    left: -469px;
+}
+
+#pet_option
+{
+    bottom: -80px;
+    left: -675px;
+    white-space: nowrap;
+
+}
+#rentals_number
+{
+    margin-bottom: 25px;
+}
+
+#rentals_number p 
+{
+    width: 85%;
+}
+}
+/* @MEDIA activités */
+
+@media all and (max-width: 1024px){
+    #town_activities
+{
+    flex-direction: column;
+
+}
+
+#town_activities
+{
+    /* justify-content: space-between; */
+    height: 100%
+   
+}
+#activity_1
+{
+    width: 100%;
+    /* height: 50%; */
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#pomegues
+{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#frioul
+{
+    height: 200px;
+}
+
+#calanques
+{
+    height: 200px; 
+    margin-bottom: 20px;
+       
+}
+
+#notre_dame 
+{
+    height: 200px ;
+    margin-bottom: 20px;
+       
+}
+
+#longchamp
+{
+    
+    height: 200px ;
+}
+
+#activity_2
+{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+#activity_3
+{
+    width: 100%;
+    height: 50%;
+}
+#activity_4
+{
+    width: 100%;
+    height: 100%;
+}
+#activities .photo_container
+{
+    /* width: 100%; */
+    height: 75%;
+}
+#activities .text_container
+{
+    height: 25%;
+    font-size: 19px;
+    /* ATTENTION Changement de taille */
+}
+}
+
+/*@MEDIA-Main-Hebergement-Grid*/
+@media all and (max-width: 1024px){
+    #search_results.grid{
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "popular"
+        "rentals_found";
+    }
+}
+/*@MEDIA-Hebergement-Grid*/
+@media all and (min-width: 1025px) and (max-width: 1300px){
+    #rentals_found.grid{
+        display: grid;
+        grid-gap:28px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "title title"
+        "la_cannebiere hotel_du_port"
+        "hotel_mouettes hotel_mer"
+        "auberge_panier hotel_amina"
+        "displayMore displayMore";
+    }
+}
+@media all and (min-width: 721px) and (max-width: 1024px){
+    #rentals_found.grid {
+        display: grid;
+        grid-gap:28px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr auto;
+        grid-template-areas:
+        "title title title"
+        "la_cannebiere hotel_du_port hotel_mouettes"
+        "hotel_mer auberge_panier hotel_amina"
+        "displayMore displayMore displayMore";
+        background-color: white;
+        border-radius: 0px;
+    }
+    
+}
+@media all and (min-width: 465px) and (max-width: 720px){
+    #rentals_found.grid{
+        display: grid;
+        grid-gap:28px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "title title"
+        "la_cannebiere hotel_du_port"
+        "hotel_mouettes hotel_mer"
+        "auberge_panier hotel_amina"
+        "displayMore displayMore";
+        border-radius: 0px;
+        background-color: white;
+    }
+    }
+@media all and (max-width: 464px){
+    #rentals_found.grid {
+        display: grid;
+        grid-gap:28px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+    "title"
+    "la_cannebiere"
+    "hotel_du_port"
+    "hotel_mouettes"
+    "hotel_mer"
+    "auberge_panier"
+    "hotel_amina"
+    "displayMore";
+        border-radius: 0px;
+        background-color: white;
+    }
+    }
