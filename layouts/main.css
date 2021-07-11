@@ -344,8 +344,6 @@ main .cardPopular img{
 #activity_1
 {
     width: 25%;
-    /* height: 100%; */
-    /* min-height: 390px; */
     margin-right: 25px;
     display: flex;
     flex-direction: column;
@@ -355,7 +353,6 @@ main .cardPopular img{
 {
     width: 25%;
     margin-right: 25px;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -364,7 +361,6 @@ main .cardPopular img{
 #activity_3
 {
     width: 25%;
-    /* height: 100%; */
     margin-right: 25px;
     display: flex;
     flex-direction: column;
@@ -372,7 +368,6 @@ main .cardPopular img{
 #activity_4                     
 {
     width: 25%;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -417,7 +412,6 @@ main .cardPopular img{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    /* background-color: white; */
 }
 
 #activities img
@@ -447,7 +441,6 @@ main .cardPopular img{
     height: 40%;
     border-radius: 25px ;
     box-shadow: .3em .3em .3em #F2F2F2;
-    /* margin-top: 3em; */
 }
 
 #calanques
@@ -470,7 +463,6 @@ main .cardPopular img{
 {
     
     height: 50% ;
-    /* margin-top: 3em; */
     border-radius: 25px ;
     box-shadow: .3em .3em .3em #F2F2F2;
 }
@@ -616,14 +608,12 @@ main .cardPopular img{
 
 #town_activities
 {
-    /* justify-content: space-between; */
     height: 100%
-   
 }
+
 #activity_1
 {
     width: 100%;
-    /* height: 50%; */
     height: 200px;
     margin-bottom: 20px;
 }
@@ -677,7 +667,6 @@ main .cardPopular img{
 }
 #activities .photo_container
 {
-    /* width: 100%; */
     height: 75%;
 }
 #activities .text_container

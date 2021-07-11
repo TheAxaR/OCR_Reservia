@@ -35,19 +35,19 @@ footer ul
 /* @MEDIA footer */
 @media all and (max-width: 1024px)
 {
-    footer
-    {
-        flex-direction: column;
-        padding-left: 20px;
-        /* width: 100%; */
-    }
+footer
+{
+    flex-direction: column;
+    padding-left: 20px;
+
+}
     
-    footer h2 
-    {
-        width: 104%;
-    }
-    footer li 
-    {
-        width: 131%;
-    }  
+footer h2 
+{
+    width: 104%;
+}
+footer li 
+{
+    width: 131%;
+}  
 }
