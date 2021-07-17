@@ -23,8 +23,9 @@ footer div
 
 footer h2
 {
-    /* padding-left: 40px; */
-    font-size: 1em;
+     font-size: 1em;
+     padding-top: 20px;
+     padding-bottom: 10px;
 }
 
 footer ul

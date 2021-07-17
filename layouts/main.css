@@ -13,8 +13,8 @@ h2{font-size:1.3em;}
 
 #option_field 
 {
-    margin: 0 auto;
-    max-width: 1340px;
+    /* margin: 0 auto; */
+    /* max-width: 1340px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,7 +32,7 @@ h2{font-size:1.3em;}
 
 #town_location
 {
-    margin-left: 25px;
+    padding-left: 10px;
 }
 
 #town_location h1
@@ -83,7 +83,6 @@ h2{font-size:1.3em;}
 #filters
 {
     margin-top: 30px;
-    margin-left: 25px;
     margin-bottom: 15px;
     display: flex;
     flex-wrap: nowrap;
@@ -108,6 +107,12 @@ h2{font-size:1.3em;}
     
 }
 
+.option :hover
+{
+    font-style: italic;
+   
+}
+
 .option i
 
 {
@@ -129,8 +134,7 @@ h2{font-size:1.3em;}
     display: flex;
     align-items: center;
     white-space: wrap;
-    margin-left: 25px;
-
+    
 }
 
 #rentals_number i
@@ -183,7 +187,7 @@ h2{font-size:1.3em;}
 #popular.grid{
     display: grid;
     grid-gap:28px;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
     grid-template-areas:
       "title"
       "cardP1"
@@ -196,7 +200,7 @@ h2{font-size:1.3em;}
 
 /*-- Hébergements */
 #search_results{
-    margin-top:50px;
+    margin-top:20px;
 }
 #search_results h2{
     font-weight:bold;
@@ -205,7 +209,7 @@ h2{font-size:1.3em;}
 #search_results h3{
     font-weight:bold;
     color: black;
-    font-size: 1em;
+    font-size: .85em;
 }
 #search_results span{
     font-size: small;
@@ -217,8 +221,8 @@ h2{font-size:1.3em;}
     font-weight:bold;
 }
 #rentals_found{
-    padding:40px 40px 40px 40px;
-    border-radius: 20px 20px 20px 20px;
+    padding:40px;
+    border-radius: 20px;
 }
 #rentals_found a{
     padding-top:5px;
@@ -234,7 +238,7 @@ h2{font-size:1.3em;}
 .rentals_found-card{
     width: 100%;
     max-height: 200px;
-    min-width:190px;
+    min-width:175px;
     border-radius: 15px;
     box-shadow: 1px 2px 5px #c2c2c2;
     background-color: white;
@@ -264,8 +268,8 @@ h2{font-size:1.3em;}
 
 /*Populaire*/
 #popular{
-    padding: 40px 40px 40px 40px;
-    border-radius: 20px 20px 20px 20px;
+    padding: 40px;
+    border-radius: 20px;
 }
 #popular #flexContainer-title{
     display: flex;
@@ -329,9 +333,12 @@ main .cardPopular img{
 {
     display: flex;
     flex-direction: column;
-    margin: 25px;    
+    padding:40px;    
 }
-
+ .text_container h2
+ {
+    font-size: 0.85em;     
+ }
 #town_activities
 
 {
@@ -339,6 +346,7 @@ main .cardPopular img{
     flex-direction: row;
     height: 25rem;
     min-height: 20em;
+    padding-top: 20px;
 }
 
 #activity_1
@@ -412,6 +420,7 @@ main .cardPopular img{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    padding-top: 15px;
 }
 
 #activities img
@@ -602,7 +611,13 @@ main .cardPopular img{
 @media all and (max-width: 1024px){
     #town_activities
 {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "activity_1 activity_2"
+        "activity_3 activity_3";
 
 }
 
@@ -614,7 +629,7 @@ main .cardPopular img{
 #activity_1
 {
     width: 100%;
-    height: 200px;
+    height: 100%;
     margin-bottom: 20px;
 }
 
@@ -631,9 +646,8 @@ main .cardPopular img{
 
 #calanques
 {
-    height: 200px; 
-    margin-bottom: 20px;
-       
+    height: 100%; 
+           
 }
 
 #notre_dame 
@@ -653,12 +667,12 @@ main .cardPopular img{
 {
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 #activity_3
 {
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 #activity_4
 {
@@ -669,6 +683,14 @@ main .cardPopular img{
 {
     height: 75%;
 }
+#vieux_port .photo_container
+{
+    height: 88%;
+}
+#calanques .photo_container
+{
+    height: 88%;
+}
 #activities .text_container
 {
     height: 25%;
@@ -676,6 +698,34 @@ main .cardPopular img{
     /* ATTENTION Changement de taille */
 }
 }
+
+@media all and (max-width: 720px){
+    #town_activities{
+        display:flex ;
+        flex-direction: column;
+    }
+    #activity_1
+    {
+        height: 200px;
+        margin-bottom: 0px;
+    }
+    #acivity_3
+    {
+        height: 50%;
+    }
+    #vieux_port .photo_container
+    {
+        height: 75%;
+    }
+    #calanques
+    {
+        height: 200px; 
+    }
+    #calanques .photo_container
+    {
+        height: 75%;
+    }
+
 
 /*@MEDIA-Main-Hebergement-Grid*/
 @media all and (max-width: 1024px){

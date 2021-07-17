@@ -2,5 +2,11 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 1340px;
+    /* max-width: 1340px; */
     }
+
+.marger
+{
+    margin: 0 auto;
+    max-width: 1340px;
+}
