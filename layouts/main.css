@@ -18,6 +18,7 @@ h2{font-size:1.3em;}
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0px 40px 10px 40px;
 }
 #search_area
 {
@@ -28,11 +29,6 @@ h2{font-size:1.3em;}
 #search_area form
 {
     display: flex;
-}
-
-#town_location
-{
-    padding-left: 10px;
 }
 
 #town_location h1
@@ -56,8 +52,8 @@ h2{font-size:1.3em;}
 
 #search_area input
 {
-    width: 175px;
-    height: 36px;
+    width: 200px;
+    height: 39px;
     border-color: #F2F2F2;
     border-style: solid;
 
@@ -72,7 +68,17 @@ h2{font-size:1.3em;}
     border-style: solid;
     border: none;
     padding: 0px 10px 0px;
+    font-size: 15px;
 
+}
+
+::placeholder
+{
+    padding-left: 10px;
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .alternate_recherche
@@ -154,6 +160,7 @@ h2{font-size:1.3em;}
 {
     display: flex;
     flex-wrap: nowrap;
+    padding: 0px 40px 0px 40px;
    
 }
 
@@ -725,7 +732,7 @@ main .cardPopular img{
     {
         height: 75%;
     }
-
+}
 
 /*@MEDIA-Main-Hebergement-Grid*/
 @media all and (max-width: 1024px){
