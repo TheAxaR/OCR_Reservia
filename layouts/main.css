@@ -139,7 +139,7 @@ h2{font-size:1.3em;}
 {
     display: flex;
     align-items: center;
-    white-space: wrap;
+    /* white-space: wrap; */
     
 }
 
