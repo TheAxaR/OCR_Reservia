@@ -72,12 +72,13 @@ header .sign_up_button:focus {
     header {
         align-items: center;
         margin-top: 20px;
+        padding: 0px;
     }
 
     /* Logo */
 
     header #logo_container img {
-        padding: 0;
+        padding-left: 40px;
     }
 
     /* Navigation */
@@ -112,8 +113,7 @@ header .sign_up_button:focus {
 
     header nav ul li a:active,
     header nav ul li a:focus {
-        /*When the current page is the active menu element.
-        Not working at the moment, since it is a prototype.*/
+      
         border-bottom: #0065fc 2px solid;
         padding-bottom: 17px;
         color: #0065fc;
@@ -123,6 +123,7 @@ header .sign_up_button:focus {
 
     header .sign_up_button {
         margin: 25px 0;
+        padding: 40px 40px 0px 0px;
     }
 
     header .sign_up_button:hover,

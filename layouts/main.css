@@ -554,7 +554,7 @@ main .cardPopular img{
 }
 #filters
 {
-   width: 50%;
+    width: 55%;
     height: 290px;
 }
 
@@ -593,13 +593,13 @@ main .cardPopular img{
 #romantic_option
 {
     bottom: -15px;
-    left: -469px;
+    left: -475px;
 }
 
 #pet_option
 {
     bottom: -80px;
-    left: -675px;
+    left: -685px;
     white-space: nowrap;
 
 }
@@ -807,5 +807,11 @@ main .cardPopular img{
     "displayMore";
         border-radius: 0px;
         background-color: white;
+    }
+    #search_results{
+        padding: 0px;
+    }
+    #popular{
+        border-radius: 0px;
     }
     }
